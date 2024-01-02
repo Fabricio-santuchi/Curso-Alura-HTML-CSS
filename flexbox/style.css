@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row; 
+    /* 
+    Eixo principal alinhado como linha ou coluna (main axis).
+    row - linha
+    row-reverse - linha reversa
+    column - coluna
+    column-reverse - coluna reversa 
+    */
+    justify-content: flex-start; 
+    /* 
+    Eixo principal é usado para centralizar o eixo principal (main axis)!
+    centralizado por:
+    flex-start - left
+    center - center
+    flex-end - right
+    space-around - 50%/100%/50% para os lados.
+    space-between - primeiro no inicio, outro meio, outro final.
+    space-evenly - 50%/50%/50% mesmo espaço para todos os lados.
+    */
+    align-items: flex-start; 
+    /*
+    Eixo transversal é usado para centralizar o eixo transversal (cross axis).
+    stretch - estica ele do começo ao fim.
+    flex-start - centraliza top.
+    center - centraliza center.
+    flex-end - centraliza bottom.
+    baseline - ele se alinha, na linha que está a fonte independente que está a fonte!
+    */
+    align-content: flex-start; 
+    /*
+    alinha, as linhas quando tem quebra de linha:
+    flex-start - junta as linhas encima (quando á quebra linha).
+    center - junta as linhas no meio (quando á quebra linha). 
+    flex-end - junta as linhas embaixo (quando á quebra linha).
+    */
+    flex-wrap: wrap;
+    /*
+    Quebra ou não quebra a linha!
+    wrap - quebra a linha!
+    wrap-reverse - quebra a linha de baixo pra cima!
+    nowrap - não quebra a linha!
+    */
+    /*  flex-flow: row wrap; 
+            é igual a:
+        flex-direction: row; 
+        flex-wrap: wrap;
+    */
+
+    gap: 30px; /* margim só que ele só cria espaço entre as caixas.*/
+    padding: 30px; 
+}
+
+.flex-item{
+    background-color: pink;
+    border: 1px solid black;
+    flex: 1;
+}
+
+.flex-item:nth-child(1){
+    height: 200px;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item:nth-child(2){
+    align-self: center;
+}
+
+.flex-item:nth-child(3){
+    align-self: flex-end;
+    /*
+    alinhando o filhos os item mais so tem como se tiver algum maior que outro.
+    flex-start - alinha encima.
+    center - alinha no centro.
+    flex-end - alinha no final.
+    */
+}
+
+.flex-item:last-child{
+    flex-grow: 1; 
+    /*
+    valor de crescimento dentro de um unico item.
+    1 = normal.
+    2 = duplica.
+    3 = triplica.
+    */
+    flex-basis: 1; 
+    /*
+    Determinar o tamanho normal dele!
+    mais tem que deixa o flex-grow = 0
+    */
+}
+
+.flex-container2{
+    /*centralizar elemento.*/
+    width: 100%;
+    height: 300px;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
