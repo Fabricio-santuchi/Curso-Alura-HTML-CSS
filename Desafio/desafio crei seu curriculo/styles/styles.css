@@ -36,3 +36,44 @@ body{
 
     /*MAIN*/
 
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 615px; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.apresentacao__conteudo__texto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+    /*FOOTER*/
+
+.rodape{
+    text-align: center;
+    background-color: #22D4FD;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: #22D4FD;
+}
