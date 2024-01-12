@@ -5,7 +5,7 @@
     height: 100%; /* 100% de altura*/
 
     display: grid; /* inicia grids + precisa de mais comandos*/
-    grid-template-columns: 300px 300px; /*1fr 1fr*/
+    grid-template-columns: repeat(auto-fill, 200px);
     /*
         cada 1fr é uma coluna e dividi o valor por igual.
         1fr = quer dizer que cada uma ocupa cada fração de espaço (divide cada uma em valores iguais).
@@ -19,7 +19,7 @@
         e a segunda coluna vai ter 100px de largura.
     */
 
-    grid-template-rows: 300px 300px;  
+    grid-template-rows: repeat(auto-fill,300px); 
     /*
         Aqui eu vou colocar (quantas) linhas eu quero e o (tamanho) de cada linha.
         ex: tem 2 valores então tenho 2 linhas.
@@ -44,12 +44,6 @@
         center = centro.
         end /ou/ right = direita.
     */
-    grid-template-areas: "green yellow"
-    "red blue"; 
-    /*
-        aqui cada aspas("") defini uma linha e assim podemos posicionar cada elemento.
-        Lembrando de colocar nome da area nos filhos.
-    */
 }
 
 div{
@@ -59,22 +53,18 @@ div{
 
 .red{
     background-color: red;
-    grid-area: red; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
 }
 
 .blue{
     background-color: blue;
-    grid-area: blue; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
 }
 
 .green{
     background-color: green;
-    grid-area: green; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
 }
 
 .yellow{
     background-color: yellow;
-    grid-area: yellow; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
 }
 
 
