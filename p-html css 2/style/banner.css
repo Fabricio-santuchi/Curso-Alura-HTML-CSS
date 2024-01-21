@@ -10,7 +10,7 @@
 }
 .banner__texto{
     font-weight: 500;
-    margin: 1em 0;
+    margin: 1.0em 0;
 }
 .banner__pesquisa{
     background-color: transparent;
@@ -31,3 +31,17 @@
     
 }
 
+@media screen and (min-width: 1024px) {
+    .banner__titulo{
+        font-size: 2.25em;
+    }
+    
+    .banner__pesquisa{
+        width: 50%;
+    }
+
+    .banner__pesquisa::placeholder{
+        background-position: 7em;
+    }
+
+}

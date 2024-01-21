@@ -32,3 +32,17 @@
     height: 1em;
     background-color: var(--branco);
 }
+
+@media screen and (min-width: 1024px) {
+    .topicos__titulo{
+        font-size: 1.5em;
+    }
+
+    .topicos__link{
+        font-size: 1.5em;
+    }
+
+    .topicos__lista__item{
+        padding: 1.5em 2em;
+    }
+}
