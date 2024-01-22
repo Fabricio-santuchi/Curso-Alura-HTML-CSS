@@ -59,4 +59,20 @@
     .topicos__lista{
         gap: 20px;
     }
+
+    .topicos__lista__item{
+        border: 2px solid transparent;
+        padding: 1em 1.3em;
+    }
+    .topicos__lista__item:hover{
+        transition: 0.8s;
+        border-radius: 30px;
+        text-shadow: 1px 1px 6px black;
+        transform: translate(0px,-10px);
+        border: 2px solid white;
+    }
+
+    .topicos__lista__item:not(hover){
+        transition: 1s;
+    }
 }

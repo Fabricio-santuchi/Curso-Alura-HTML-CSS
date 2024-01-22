@@ -84,20 +84,8 @@
     text-decoration: none;
     color: var(--branco);
     font-weight: 700;
-        /*Text*/
-    border: 3px solid transparent;
 }
-        /*Text*/
-.botões__ancora:hover{
-    border: 3px solid #7e5600;
-    border-radius: 20px;
-    text-shadow: 0px 0px 5px #4e3501;
-    transition: 1.2s;
-}
-        /*Text*/
-.botões__ancora:not(hover){
-    transition: 1s;
-}
+
 
 .Estrelinhas{
     margin: 0.5em 0;
@@ -157,5 +145,20 @@
     .card{
         width: 60%;
         margin-left: 3em;
+    }
+
+    .botões__ancora{
+        border: 3px solid transparent;
+    }
+
+    .botões__ancora:hover{
+        border: 3px solid #7e5600;
+        border-radius: 20px;
+        text-shadow: 0px 0px 5px #4e3501;
+        transition: 1.2s;
+    }
+          
+    .botões__ancora:not(hover){
+        transition: 1s;
     }
 }
