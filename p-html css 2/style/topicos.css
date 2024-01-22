@@ -43,6 +43,20 @@
     }
 
     .topicos__lista__item{
-        padding: 1.5em 2em;
+        padding: 24px 32px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topicos{
+        padding: 3em 25vw;
+    }
+
+    .topicos__titulo{
+        font-size: 32px;
+    }
+
+    .topicos__lista{
+        gap: 20px;
     }
 }

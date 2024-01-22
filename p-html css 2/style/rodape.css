@@ -45,3 +45,13 @@ hr{
         font-size: 14px;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .lista-rodapé{
+        border-left: 1px solid var(--cinza-rodape-lista);
+        padding-left: 1em;
+    }
+    .rodape{
+        padding: 3em 0;
+    }
+}
