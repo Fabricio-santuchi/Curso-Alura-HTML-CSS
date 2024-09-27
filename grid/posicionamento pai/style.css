@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-.container{
-    width: 100%; /* 100% de largura*/
-    height: 100%; /* 100% de altura*/
+.container {
+  width: 100%; /* 100% de largura*/
+  height: 100%; /* 100% de altura*/
 
-    display: grid; /* inicia grids + precisa de mais comandos*/
-    grid-template-columns: 300px 300px; /*1fr 1fr*/
-    /*
+  display: grid; /* inicia grids + precisa de mais comandos*/
+  grid-template-columns: 300px 300px; /*1fr 1fr*/
+  /*
         cada 1fr é uma coluna e dividi o valor por igual.
         1fr = quer dizer que cada uma ocupa cada fração de espaço (divide cada uma em valores iguais).
 
@@ -19,64 +19,61 @@
         e a segunda coluna vai ter 100px de largura.
     */
 
-    grid-template-rows: 300px 300px;  
-    /*
+  grid-template-rows: 300px 300px;
+  /*
         Aqui eu vou colocar (quantas) linhas eu quero e o (tamanho) de cada linha.
         ex: tem 2 valores então tenho 2 linhas.
         a primeira linha vai ter 200px de altura.
         e a segunda linha vai ter 300px de altura.
     */
 
-    /*align-items: center; */
-    /*
+  /*align-items: center; */
+  /*
         alinha o eixo Y de cima pra baixo. 
         Alinha o elemento que está dentro da caixa.
         start = encima.
         center = centro.
         end = embaixo.
     */
-    
-    /*justify-items: center; */
-    /*
+
+  /*justify-items: center; */
+  /*
         alinha o eixo X da esquerda para direita.
         Alinha o elemento que está dentro da caixa.
         start /ou/ left = esquerda.
         center = centro.
         end /ou/ right = direita.
     */
-    grid-template-areas: "green yellow"
-    "red blue"; 
-    /*
+  grid-template-areas:
+    "green yellow"
+    "red blue";
+  /*
         aqui cada aspas("") defini uma linha e assim podemos posicionar cada elemento.
         Lembrando de colocar nome da area nos filhos.
     */
 }
 
-div{
-    /*height: 200px;
+div {
+  /*height: 200px;
     width: 200px;*/
 }
 
-.red{
-    background-color: red;
-    grid-area: red; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
+.red {
+  background-color: red;
+  grid-area: red; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
 }
 
-.blue{
-    background-color: blue;
-    grid-area: blue; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
+.blue {
+  background-color: blue;
+  grid-area: blue; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
 }
 
-.green{
-    background-color: green;
-    grid-area: green; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
+.green {
+  background-color: green;
+  grid-area: green; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
 }
 
-.yellow{
-    background-color: yellow;
-    grid-area: yellow; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
+.yellow {
+  background-color: yellow;
+  grid-area: yellow; /*denominando o nome da area para poder organizar usando o grid-template-areas.*/
 }
-
-
-
-

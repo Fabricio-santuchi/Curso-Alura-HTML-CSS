@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-.container{
-    width: 100%; /* 100% de largura*/
-    height: 100%; /* 100% de altura*/
+.container {
+  width: 100%; /* 100% de largura*/
+  height: 100%; /* 100% de altura*/
 
-    display: grid; /* inicia grids + precisa de mais comandos*/
-    grid-template-columns: 300px 200px; /*1fr 1fr*/
-    /*
+  display: grid; /* inicia grids + precisa de mais comandos*/
+  grid-template-columns: 300px 200px; /*1fr 1fr*/
+  /*
         cada 1fr é uma coluna e dividi o valor por igual.
         1fr = quer dizer que cada uma ocupa cada fração de espaço (divide cada uma em valores iguais).
 
@@ -19,8 +19,8 @@
         e a segunda coluna vai ter 100px de largura.
     */
 
-    grid-template-rows: 200px 300px;  
-    /*
+  grid-template-rows: 200px 300px;
+  /*
         Aqui eu vou colocar (quantas) linhas eu quero e o (tamanho) de cada linha.
         ex: tem 2 valores então tenho 2 linhas.
         a primeira linha vai ter 200px de altura.
@@ -28,29 +28,25 @@
     */
 }
 
-div{
-    /*
+div {
+  /*
     height: 200px;
     width: 200px;
     */
 }
 
-.red{
-    background-color: red;
+.red {
+  background-color: red;
 }
 
-.blue{
-    background-color: blue;
+.blue {
+  background-color: blue;
 }
 
-.green{
-    background-color: green;
+.green {
+  background-color: green;
 }
 
-.yellow{
-    background-color: yellow;
+.yellow {
+  background-color: yellow;
 }
-
-
-
-
